@@ -1,0 +1,39 @@
+.action-btns {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+.hire-me:hover {
+  color: var(--light);
+  background: var(--primary-color);
+}
+.hire-me {
+  border: 2px solid;
+  border-radius: 10px;
+  color: var(--dark);
+  background-color: var(--primary-color);
+  font-weight: 800;
+  margin: 8px;
+  font-size: 22px;
+  padding: 5px 5px;
+}
+.hire-me:hover {
+  color: var(--dark);
+  background-color: var(--light);
+  border-color: var(--primary-color);
+}
+.resume {
+  border: 2px solid;
+  border-radius: 10px;
+  color: var(--dark);
+  background-color: var(--primary-color);
+  margin: 8px;
+  font-size: 22px;
+  font-weight: 800;
+  padding: 8px 8px;
+}
+.resume:hover {
+  color: var(--dark);
+  background-color: var(--light);
+  border-color: var(--primary-color);
+}

@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  top: 0;
+  justify-content: center;
+  height: 100dvh;
+}
+
+.heroImage {
+  position: relative;
+  border: 1px solid var(--dark);
+  width: 300px;
+  height: 300px;
+  background-color: #ffffffce;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.heroImage h1 {
+  color: var(--primary-color);
+  font-size: 50px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.intro {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-top: 10px;
+  max-width: 70%;
+  text-align: center;
+  line-height: 1.5;
+}
+.action-btns a {
+  position: relative;
+  display: inline-flex;
+  padding: 10px 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.hire-me:hover {
+  color: var(--light);
+  background: var(--primary-color);
+}
+
+.hire-me:hover {
+  color: var(--dark);
+  background-color: var(--light);
+  border-color: var(--primary-color);
+}
+.hero-me .resume {
+  border: 2px solid;
+  border-radius: 10px;
+  color: var(--dark);
+  background-color: var(--light);
+  margin: 8px;
+  font-size: 22px;
+  font-weight: 800;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+.resume:hover {
+  color: var(--dark);
+  background-color: var(--light);
+  border-color: var(--primary-color);
+}
+.sm-icons {
+  display: flex;
+  gap: 40px;
+}
+
+.sm-icons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
+.sm-icons img:hover {
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
+}
+strong {
+  color: rgb(62, 233, 182);
+}
