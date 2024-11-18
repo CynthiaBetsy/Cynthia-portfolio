@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
-import aboutImage from "../../Assets/portfolio_8.jpeg";
-import Buttons from "../Buttons/Buttons";
+import aboutImage from "../../Assets/portfolio_7.png";
 const About = () => {
   return (
     <>
@@ -43,9 +42,6 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="about-btns">
-        <Buttons />
       </div>
     </>
   );

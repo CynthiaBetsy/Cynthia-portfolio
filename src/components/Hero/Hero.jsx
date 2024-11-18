@@ -23,7 +23,7 @@ const Hero = () => {
       </span>
 
       <div className="action-btns">
-        <a href="/Contact" className="hire-me">
+        <a href="#contact" className="hire-me">
           Hire me
         </a>
         <a href={resume} className="resume" download>

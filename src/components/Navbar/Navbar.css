@@ -1,18 +1,16 @@
-:root {
-  --primary-color: hsl(175, 61%, 61%);
-  --light: hsla(204, 89%, 82%, 0.966);
-  --dark: hsl(203, 93%, 12%);
-}
 body {
   margin: 0;
-  padding: 0;
+  padding: 0px;
   box-sizing: border-box;
   width: 100%;
+  font-family: "Arial", sans-serif;
 }
+
 .container {
   margin: 0;
   padding: 0;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -32,53 +30,53 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
+  box-shadow: 0 4px 8px;
 }
 
 .navbar .logo {
   display: flex;
   color: var(--dark);
   border: 4px solid var(--dark);
-  padding: 15px 8px;
+  padding: 10px;
   background-color: var(--primary-color);
   border-radius: 40px;
   cursor: pointer;
-  width: 145px;
   font-weight: 800;
-  font-size: 22px;
+  font-size: 20px;
   transition: 0.5s;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .navbar .logo:hover {
   color: var(--primary-color);
   background-color: var(--dark);
-  border-color: var(--dark);
 }
 
 .nav-links {
   list-style: none;
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   transition: all 0.3s ease-in-out;
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 0 10px;
   position: relative;
 }
 
 .nav-links li a {
   color: var(--dark);
   text-decoration: none;
-  padding: 8px 0;
+  padding: 10px 5px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: var(--dark);
+  color: var(--light);
 }
 
 .nav-links li::after {
@@ -99,43 +97,63 @@ body {
   left: 0;
 }
 
+#nav-btns {
+  border: none;
+  color: var(--dark);
+  background-color: var(--primary-color);
+  font-size: 20px;
+  cursor: pointer;
+}
+
 .menu-toggle {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  margin: 20px;
 }
 
 .menu-toggle .bar {
   height: 3px;
-  width: 35px;
+  width: 30px;
   background: var(--dark);
-  margin: 3px 0;
+  margin: 3px 15px;
 }
 
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
+    border-radius: 10px;
+    width: 18%;
     position: absolute;
-    top: 60px;
+    top: 0px;
     right: 0;
-    left: 0;
     background: var(--primary-color);
+    padding: 20px 0;
+    z-index: 999;
   }
 
   .nav-links.open {
     display: flex;
-    right: 0;
   }
 
   .menu-toggle {
     display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .navbar {
+    padding: 10px 15px;
   }
 }
 
 .section {
   height: 100vh;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }

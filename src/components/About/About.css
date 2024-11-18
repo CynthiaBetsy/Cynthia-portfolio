@@ -9,18 +9,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  margin: 20px;
+  width: 100%;
+  gap: 0px;
+  /* background-color: var(--primary-color); */
+  margin: 0px;
+  height: 100vh;
 }
 
 .about-title {
   position: relative;
   text-align: center;
+  padding-top: 0px;
 }
 .about-title h1 {
-  padding: 0 20px;
-  margin: 0;
-  font-size: 32px;
+  padding: 0px;
+  margin-top: 0px;
+  font-size: 35px;
   font-weight: 600;
   color: var(--primary-color);
 }
@@ -28,7 +32,7 @@
 .about_body {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0px;
   align-items: center;
   justify-content: center;
   max-width: 90%;
@@ -38,6 +42,7 @@
 .about_body img {
   width: 200px;
   height: 200px;
+  margin: 20px;
   border-radius: 20px;
   z-index: -1;
 }
@@ -60,9 +65,9 @@
 .skills {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
   min-width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 
 .skill {
@@ -76,9 +81,9 @@ hr {
   height: 10px;
   width: 100%;
   outline: none;
-  border-radius: 50px;
+  border-radius: 40px;
   border: none;
-  background: linear-gradient(to right, var(--primary-color), #036b94);
+  background: var(--primary-color);
 }
 
 .skills p {
@@ -108,7 +113,10 @@ hr {
   }
 
   .about-title h1 {
-    font-size: 40px;
+    font-size: 35px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 10px;
   }
 
   .paragraph {
@@ -118,5 +126,15 @@ hr {
   .skills p {
     min-width: 150px;
     font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-title h1 {
+    padding: 0px;
+    margin-top: 100px;
+  }
+  .skills {
+    margin-bottom: 100px;
   }
 }

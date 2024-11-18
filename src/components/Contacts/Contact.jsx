@@ -9,9 +9,9 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <div className="contact">
-        {/* <div className="contact-title">
+        <div className="contact-title">
           <h1>{`<Contact Us/>`}</h1>
-        </div> */}
+        </div>
         <div className="contact-section">
           <div className="contact-left">
             <h2>Get in Touch</h2>
@@ -36,7 +36,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
       <div className="contact-form">
         <CPForm />
       </div>
